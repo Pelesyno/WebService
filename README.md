@@ -6,17 +6,18 @@
 2. CodeIgniter 3.0+
 
 ** Instruções para Instalação localhost **
-
-1 - Clonar o conteudo para sua pasta do apache;
-2 - Criar um Banco de dados;
-3 - Importar o Arquivo webservice.sql da pasta DB;
-4 - na pasta Application/config alterar o arquivo config.php na linha 26 tirar "http://45.231.128.24/webservice" e colocar o seu endereço do apache;
-...
-	$config['base_url'] = 'http://45.231.128.24/webservice';
-...
-5 - na mesma pasta Application/config alterar o arquivo database.php na linha 79 informar o usuario para acesso ao banco criado na linha 80 informar a senha para acesso ao banco e na linha 81 informar o nome do banco criado;
+-------------
+- Clonar o conteudo para sua pasta do apache;
+- Criar um Banco de dados;
+- Importar o Arquivo webservice.sql da pasta DB;
+- na pasta Application/config alterar o arquivo config.php na linha 26 tirar "http://localhost/suapastaapache" e colocar o seu endereço do apache;
+```
+	$config['base_url'] = 'http://localhost/suapastaapache';
+```
+- na mesma pasta Application/config alterar o arquivo database.php na linha 79 informar o usuario para acesso ao banco criado na linha 80 informar a senha para acesso ao banco e na linha 81 informar o nome do banco criado;
 
 ** Instruções de Uso no Dominio **
+-------------
 
 ## Rota do JSON do POSTMAN para importar as Collection
 
@@ -137,3 +138,7 @@ http://45.231.128.24/webservice/index.php/v1/Products/2/purchase
 A rota da v2 esta funcionando de igual modo as rotas v1 com a diferença que a v2 necessita de autenticação para operar.
 Foi utilizado o tipo de Autenticação Basic;
 Para fins de teste foi definido um Usuario fixo "admin" e senha "admin"
+
+### Maintainers:
+* Antonio Carlos
+* Daniel Rodrigues
