@@ -1,0 +1,317 @@
+{
+	"id": "55f79fdf-55e0-9170-746d-8da53ddfc0f3",
+	"name": "WS_Products",
+	"description": "",
+	"order": [
+		"c312c0fb-6e26-4baf-700a-63d23b5fab75",
+		"167bccc2-cb64-fad8-6ca2-fc7cfa6f92e3",
+		"cd76ad21-9c7a-6a5c-a74f-5f5eba847cbc",
+		"22deb410-e6bf-d43b-dbc5-0f584cbb2e24",
+		"e22b7c8e-3c66-b7d6-b4d5-157280292e63",
+		"4d0b0261-bb69-919e-e98a-ddcfb7082091",
+		"49e21c18-36a8-3c22-80b3-a8a4548b0e20",
+		"f857a127-5eab-3700-a96e-f84e911ddf20",
+		"ddbe8e6e-5f88-efe0-5edb-309b6d2271ff"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1553644231900,
+	"owner": "7018214",
+	"public": false,
+	"requests": [
+		{
+			"id": "167bccc2-cb64-fad8-6ca2-fc7cfa6f92e3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://45.231.128.24/webservice/index.php/v1/Products",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553732960413,
+			"name": "WS_Post_Produto",
+			"description": "",
+			"collectionId": "55f79fdf-55e0-9170-746d-8da53ddfc0f3",
+			"responses": [],
+			"rawModeData": "{\n\t\"nome\": \"Água sanitária 1000ml\",\n\t\"sku\": \"0000150\",\n\t\"ean\": \"1212112456789\",\n\t\"quantidade\": 1,\n\t\"unidade_medida\": \"unidade\",\n\t\"cnpj_industria\": \"01111222001111\",\n\t\"categoria\": \"Limpeza\"\n}"
+		},
+		{
+			"id": "22deb410-e6bf-d43b-dbc5-0f584cbb2e24",
+			"headers": "",
+			"headerData": [],
+			"url": "http://45.231.128.24/webservice/index.php/v1/Products/2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553730382016,
+			"name": "WS_Delete_Product",
+			"description": "",
+			"collectionId": "55f79fdf-55e0-9170-746d-8da53ddfc0f3",
+			"responses": []
+		},
+		{
+			"id": "49e21c18-36a8-3c22-80b3-a8a4548b0e20",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://45.231.128.24/webservice/index.php/v1/Products/2/purchase",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553730508817,
+			"name": "WS_Purchase_Products",
+			"description": "",
+			"collectionId": "55f79fdf-55e0-9170-746d-8da53ddfc0f3",
+			"responses": [],
+			"rawModeData": "{\n\t\"products\":[\n\t\t{\n\t\t\t\"product_id\": 1,\n\t\t\t\"quantidade\": 1\n\t\t},\n\t\t{\n\t\t\t\"product_id\": 3,\n\t\t\t\"quantidade\": 2\n\t\t}\n\t]\n}"
+		},
+		{
+			"id": "4d0b0261-bb69-919e-e98a-ddcfb7082091",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://45.231.128.24/webservice/index.php/v1/Products/1/removal",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553730428624,
+			"name": "WS_Removal_Product",
+			"description": "",
+			"collectionId": "55f79fdf-55e0-9170-746d-8da53ddfc0f3",
+			"responses": [],
+			"rawModeData": "{\n\t\"total\": \"1\"\n}"
+		},
+		{
+			"id": "c312c0fb-6e26-4baf-700a-63d23b5fab75",
+			"headers": "//VEI_Id: 1\n",
+			"headerData": [
+				{
+					"key": "VEI_Id",
+					"value": "1",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://45.231.128.24/webservice/index.php/v1/Products",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553730513693,
+			"name": "WS_Get_Products",
+			"description": "",
+			"collectionId": "55f79fdf-55e0-9170-746d-8da53ddfc0f3",
+			"responses": []
+		},
+		{
+			"id": "cd76ad21-9c7a-6a5c-a74f-5f5eba847cbc",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://45.231.128.24/webservice/index.php/v1/Products/2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553730361269,
+			"name": "WS_Put_Product",
+			"description": "",
+			"collectionId": "55f79fdf-55e0-9170-746d-8da53ddfc0f3",
+			"responses": [],
+			"rawModeData": "{\n\t\"nome\": \"joioooc\",\n\t\"sku\": \"00002\",\n\t\"ean\": \"12345678912\",\n\t\"quantidade\": 10,\n\t\"unidade_medida\": \"unidade\",\n\t\"cnpj_industria\": \"01111222000101\",\n\t\"categoria\": \"graos\"\n}"
+		},
+		{
+			"id": "ddbe8e6e-5f88-efe0-5edb-309b6d2271ff",
+			"headers": "//VEI_Id: 1\n",
+			"headerData": [
+				{
+					"key": "VEI_Id",
+					"value": "1",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://45.231.128.24/webservice/index.php/v1/Products?page=1&limit=5&category=limpeza",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "limit",
+					"value": "5",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "category",
+					"value": "limpeza",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553732982582,
+			"name": "WS_Get_Products_Page_Limit_Category",
+			"description": "",
+			"collectionId": "55f79fdf-55e0-9170-746d-8da53ddfc0f3",
+			"responses": []
+		},
+		{
+			"id": "e22b7c8e-3c66-b7d6-b4d5-157280292e63",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://45.231.128.24/webservice/index.php/v1/Products/1/insertion",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553730401566,
+			"name": "WS_Insertion_Product",
+			"description": "",
+			"collectionId": "55f79fdf-55e0-9170-746d-8da53ddfc0f3",
+			"responses": [],
+			"rawModeData": "{\n\t\"total\": \"10\"\n}"
+		},
+		{
+			"id": "f857a127-5eab-3700-a96e-f84e911ddf20",
+			"headers": "//VEI_Id: 1\n",
+			"headerData": [
+				{
+					"key": "VEI_Id",
+					"value": "1",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://45.231.128.24/webservice/index.php/v1/Products?page=3&limit=5",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "3",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "limit",
+					"value": "5",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1553732295698,
+			"name": "WS_Get_Products_Page_Limit",
+			"description": "",
+			"collectionId": "55f79fdf-55e0-9170-746d-8da53ddfc0f3",
+			"responses": []
+		}
+	]
+}
